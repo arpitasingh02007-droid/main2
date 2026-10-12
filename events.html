@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Events - Events</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h2>Campus Event Management</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="register.html">Registration</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>College Events</h1>
+
+        <div class="cards">
+            <div class="card" id="techCard">
+                <h3>Tech Fest</h3>
+                <p>Date: 20 November 2026</p>
+                <p>Venue: Computer Lab</p>
+                <p>Participate in coding and technical competitions.</p>
+            </div>
+
+            <div class="card">
+                <h3>Music Festival</h3>
+                <p>Date: 25 November 2026</p>
+                <p>Venue: College Auditorium</p>
+                <p>Enjoy singing and musical performances.</p>
+            </div>
+
+            <div class="card">
+                <h3>Sports Day</h3>
+                <p>Date: 30 November 2026</p>
+                <p>Venue: College Ground</p>
+                <p>Take part in games and sports competitions.</p>
+            </div>
+
+            <div class="card">
+                <h3>Art Competition</h3>
+                <p>Date: 5 December 2026</p>
+                <p>Venue: Seminar Hall</p>
+                <p>Showcase your creativity and artistic skills.</p>
+            </div>
+        </div>
+
+        <section class="form-section">
+            <h2>Add an Event</h2>
+
+            <input type="text" id="eventName"
+                   placeholder="Enter event name">
+
+            <button onclick="addEvent()">Add Event</button>
+
+            <p id="eventMessage"></p>
+            <div id="addedEvents"></div>
+        </section>
+
+        <section class="form-section">
+            <h2>Modify an Event</h2>
+            <button onclick="changeEventAppearance()">
+                Change Tech Fest Appearance
+            </button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Campus Event Management | College Project</p>
+    </footer>
+
+</body>
+</html>

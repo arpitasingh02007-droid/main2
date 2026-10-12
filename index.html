@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Events - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h2>Campus Event Management</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="register.html">Registration</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="welcome">
+            <h1 id="mainHeading">Welcome to Campus Events!</h1>
+            <p>
+                Discover college events, participate in activities,
+                and create unforgettable memories.
+            </p>
+
+            <button onclick="changeHeading()">Change Heading</button>
+        </section>
+
+        <section>
+            <h2>Upcoming Events</h2>
+
+            <div class="cards">
+                <div class="card" id="eventCard1">
+                    <h3>Tech Fest</h3>
+                    <p>Date: 20 November 2026</p>
+                    <p>Explore technology and innovation.</p>
+                    <button onclick="changeCardColor()">Change Card Colour</button>
+                </div>
+
+                <div class="card">
+                    <h3>Music Festival</h3>
+                    <p>Date: 25 November 2026</p>
+                    <p>Enjoy music, singing, and performances.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Sports Day</h3>
+                    <p>Date: 30 November 2026</p>
+                    <p>Participate in exciting sports activities.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="highlights">
+            <button onclick="toggleHighlights()">Show / Hide Highlights</button>
+
+            <div id="eventHighlights">
+                <h2>Event Highlights</h2>
+                <p>Technical competitions, cultural performances,
+                   sports activities, and student participation.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Campus Event Management | College Project</p>
+    </footer>
+
+</body>
+</html>
+
